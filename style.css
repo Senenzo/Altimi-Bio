@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding-top: 56px;
 }
@@ -100,7 +104,6 @@ body {
 footer {
   width: 100%;
   margin: 0 auto;
-  z-index: 100;
 }
 
 .up-hold{
@@ -157,18 +160,73 @@ footer {
   color: white;
 }
 
-.footer img{
-  margin-left: auto;
-  margin-right: auto;
+
+/* About page */
+
+.team-section{
+  overflow: hidden;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  background: #f5f7f5;
+  padding: 60px;
 }
 
-.img-in{
+.ps{
+  margin-bottom: 40px;
+}
+
+.ps a{
   display: inline-block;
-  z-index : 1;
+  margin: 0px 30px;
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.ps a img{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.4s all;
+}
+
+
+.ps a:hover img,
+.ps a:focus img,
+.ps a.active img {
+  filter: none;
+}
+
+.section{
+  width: 600px;
+  margin: auto;
+  font-size: 20px;
+  text-align: justify;
+  height: 0;
+  overflow: hidden;
+}
+
+.section:target{
+  height: auto;
+}
+
+.name{
+  display: block;
+}
+
+.name h3, .name p{
+  display: inline-block;
+}
+
+
+@media (max-width:690px){
+  
+.section{
+  width: auto;
+}
+
+iframe{
+  width: 450px;
+}
+
 }
 
