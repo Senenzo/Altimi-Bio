@@ -230,3 +230,17 @@ iframe{
 
 }
 
+/* Products */
+
+.corses-tab{
+  border: 1px solid #edf0f2;
+  border-radius: 5px;
+}
+
+.foxy img{
+  position: fixed;
+}
+
+.card-body li{
+  line-height: 1.7;
+}
