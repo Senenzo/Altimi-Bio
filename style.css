@@ -244,3 +244,7 @@ iframe{
 .card-body li{
   line-height: 1.7;
 }
+
+.disabled{
+  list-style: none;
+}
